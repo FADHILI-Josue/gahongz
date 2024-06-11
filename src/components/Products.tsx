@@ -49,7 +49,7 @@ const ProductList = ({products}: {products:Iitem[]}) => {
 
     return (
         <motion.div
-            className="grid grid-cols-5 gap-10 py-10"
+            className="grid grid-cols-1 min-[546px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 py-10"
             ref={ref}
             variants={containerVariants}
             initial="hidden"

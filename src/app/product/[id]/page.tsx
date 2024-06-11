@@ -17,11 +17,11 @@ const page: FC<pageProps> = ({ params }) => {
     if (!product) return notFound()
     return <div>
         <MaxWidthWrapper className="mt-20">
-            <div className="flex">
+            <div className="flex flex-col xl:flex-row">
                 <div className="flex-[0.7] mt-20">
                     <img src={product?.image ?? ""} alt="more than this" className="w-full h-full scale-[.8] flex-1 object-contain" />
                 </div>
-                <div className="flex-[0.3] ml-5 mt-40 flex text-stone-600 flex-col text-sm">
+                <div className="flex-[0.3] ml-5 xl:mt-40 flex text-stone-600 flex-col text-sm">
                     <p className='text-xs text-stone-400 mb-3'>CECE WINANS STORE</p>
                     <h1 className="text-4xl ">{product?.name}</h1>
                     <span className="text-lg my-7">${product?.price.toFixed(2)} USD</span>
