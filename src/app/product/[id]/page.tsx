@@ -15,7 +15,7 @@ interface pageProps {
 const page: FC<pageProps> = ({ params }) => {
     const product = products.find((_,i) => i === Number(params.id))
     if (!product) return notFound()
-    return <div className='min-h-[200vh]'>
+    return <div>
         <MaxWidthWrapper className="mt-20">
             <div className="flex">
                 <div className="flex-[0.7] mt-20">

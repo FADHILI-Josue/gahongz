@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import { FC, useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link';
-import { MailSearch, ShoppingBag } from 'lucide-react';
+import { Search, ShoppingBag } from 'lucide-react';
 import MaxWidthWrapper from './MaxWidthWrapper';
 
 interface NavbarProps {
@@ -64,7 +64,7 @@ const Navbar: FC<NavbarProps> = ({ }) => {
                     </div>
                 </div>
                 <div className="flex items-center gap-5">
-                    <MailSearch size={30} strokeWidth={1} />
+                    <Search size={30} strokeWidth={1} />
                     <ShoppingBag size={30} strokeWidth={1} />
                 </div>
             </MaxWidthWrapper>
